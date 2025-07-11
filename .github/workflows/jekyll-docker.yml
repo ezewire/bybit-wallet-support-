@@ -1,0 +1,56 @@
+
+
+export default fion Home() { return ( <div className="min-h-screen bg-gray-100"> <Head> <title>Bybit Wallet Support</title> <meta name="description" content="Official support for Bybit Wallet issues, guides, and FAQs." /> </Head>
+
+<header className="bg-yellow-500 text-white p-6 shadow-md">
+    <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 className="text-2xl font-bold">Bybit Wallet Support</h1>
+      <nav className="space-x-4">
+        <Link href="/guides" className="hover:underline">Guides</Link>
+        <Link href="/faq" className="hover:underline">FAQs</Link>
+        <Link href="/contact" className="hover:underline">Contact</Link>
+        <Link href="/disclaimer" className="hover:underline">Disclaimer</Link>
+      </nav>
+    </div>
+  </header>
+
+  <main className="max-w-4xl mx-auto p-8">
+    <h2 className="text-3xl font-semibold mb-4">Welcome to Bybit Wallet Support</h2>
+    <p className="mb-4 text-lg">
+      Need help with your Bybit wallet? You're in the right place. Explore our guides,
+      read frequently asked questions, or contact our support team.
+    </p>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+      <div className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 className="text-xl font-bold mb-2">🔐 Recover Wallet</h3>
+        <p>Step-by-step instructions to recover access to your Bybit wallet.</p>
+        <Link href="/guides" className="text-yellow-600 font-semibold mt-2 inline-block">View Guide →</Link>
+      </div>
+
+      <div className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 className="text-xl font-bold mb-2">📋 FAQs</h3>
+        <p>Find answers to common questions about your wallet and support process.</p>
+        <Link href="/faq" className="text-yellow-600 font-semibold mt-2 inline-block">View FAQs →</Link>
+      </div>
+
+      <div className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 className="text-xl font-bold mb-2">📨 Contact Support</h3>
+        <p>Reach out to our team if you need direct assistance with your wallet.</p>
+        <Link href="/contact" className="text-yellow-600 font-semibold mt-2 inline-block">Contact Us →</Link>
+      </div>
+
+      <div className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 className="text-xl font-bold mb-2">⚠️ Disclaimer</h3>
+        <p>This site is not affiliated with Bybit.com. It’s an independent support platform.</p>
+        <Link href="/disclaimer" className="text-yellow-600 font-semibold mt-2 inline-block">Read More →</Link>
+      </div>
+    </div>
+  </main>
+
+  <footer className="bg-gray-800 text-white text-center py-4 mt-12">
+    <p>&copy; {new Date().getFullYear()} Bybit Wallet Support. All rights reserved.</p>
+  </footer>
+</div>
+
+); }
